@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fechas Importantes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Fechas Importantes (toque la fecha)</h5>
+        <div class="date-list">
+          <div class="card date-card" onclick="showImage('images/fecha1.jpg')">
+            <div class="card-body">
+                <h6 class="card-subtitle">25 de febrero del 2023</h6>
+              <p class="card-text">Instagram</p>
+              <p class="card-text">El día anterior me armé de valor y le escribí por Instagram, y el 25 usted me respondió. Ese día me dio una felicidad y nervios.</p>
+            </div>
+          </div>
+          <div class="card date-card" onclick="showImage('images/fecha2.jpg')">
+            <div class="card-body">
+              <h6 class="card-subtitle">4 de marzo del 2023</h6>
+              <p class="card-text">Burger King</p>
+              <p class="card-text">Ese día salimos a comer juntos por primera vez. Estaba muy nervioso, no sabía cómo iba a salir todo, pero todo salió de lo mejor. Platicamos, comimos y poco a poco la iba conociendo lo especial que es.</p>
+            </div>
+          </div>
+          <div class="card date-card" onclick="showImage('images/fecha3.jpg')">
+            <div class="card-body">
+              <h6 class="card-subtitle">Muchas fechas</h6>
+              <p class="card-text">Mi casita</p>
+              <p class="card-text">Aqui no es una fecha, son muchas, cada una de las ocaciones en la que viene a visitarme, me alegra mi dia, cada vez que me visita son unas de las mejores tardes mi vida, esperando nunca terminen</p>
+            </div>
+          </div>
+          <div class="card date-card" onclick="showImage('images/fecha4.jpg')">
+            <div class="card-body">
+              <h6 class="card-subtitle">Proximamente mas fechas juntos</h6>
+              <p class="card-text">Proximamente mas fechas juntos</p>
+              <p class="card-text">Proximamente mas fechas juntos</p>
+            </div>
+          </div>
+
+          
+          <!-- Agrega más "cards" para otras fechas importantes -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="image-modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modal-image">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

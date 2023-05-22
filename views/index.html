@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Botones Bonitos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/ripple@3.2.0/dist/mdc.ripple.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/button@3.2.0/dist/mdc.button.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Para la niña más bella</h5>
+                <div class="buttons-container">
+                    <button id="button1" class="mdc-button mdc-button--unelevated">Fechas importantes</button>
+                    <button id="button2" class="mdc-button mdc-button--unelevated">Agenda</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@material/ripple@3.2.0/dist/mdc.ripple.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        const buttons = document.querySelectorAll('.mdc-button');
+        buttons.forEach((button) => {
+            mdc.ripple.MDCRipple.attachTo(button);
+        });
+    </script>
+</body>
+
+</html>
