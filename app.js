@@ -11,5 +11,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 const port = 3000;
 
 app.listen(port, () => {
-    console.log(`Servidor iniciado en http://localhost:${port}`);
+    console.log(`Servidor iniciado en port:${port}`);
 });
